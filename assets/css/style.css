@@ -452,34 +452,42 @@ nav a.active, nav a[aria-current="page"] {
     border: 0;
 }
 
-/* Responsive Rules */
-@media (max-width: 768px) {
-    .navbar { flex-direction: column; gap: 15px; }
-    .nav-controls { width: 100%; justify-content: center; }
-    .logo-text { width: 100%; justify-content: center; }
-    
-    .hero-content h1 { font-size: 1.8rem; }
-    
-    /* Show Sticky WA on Mobile */
-    .sticky-wa { display: block; }
-    .site-footer { padding-bottom: 90px; } /* Prevent footer covered by sticky button */
-}
-/* --- PENGATURAN KHUSUS LOGO GAMBAR --- */
+/* --- LOGO & RESPONSIVE RULES (UPDATED) --- */
 
 .site-logo {
-    height: 55px;       /* Ukuran Standar (Laptop/PC) */
-    width: auto;        /* Lebar menyesuaikan biar tidak gepeng */
+    height: 60px;      /* Ukuran Laptop */
+    width: auto;
     display: block;
     transition: all 0.3s ease;
 }
 
-/* Tampilan Mobile (Layar HP) */
+/* Tampilan Mobile (Layar HP) - FIX LAYOUT */
 @media (max-width: 768px) {
-    .site-logo {
-        height: 40px;   /* Ukuran Lebih Kecil untuk HP */
+    .navbar { 
+        flex-direction: column; 
+        align-items: center; /* KUNCI: Membuat semua elemen rata tengah */
+        gap: 15px; 
     }
     
     .brand-wrapper {
-        flex-grow: 1;   /* Biar logo tidak terhimpit tombol di sebelahnya */
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Logo di tengah */
     }
+
+    .site-logo {
+        height: 35px; /* Ukuran Logo DIKECILKAN di HP agar proporsional */
+    }
+
+    .nav-controls { 
+        width: 100%; 
+        justify-content: center; /* Tombol menu/bahasa di tengah */
+    }
+
+    /* Pemanis Hero Text di HP */
+    .hero-content h1 { font-size: 1.8rem; }
+    
+    /* Show Sticky WA on Mobile */
+    .sticky-wa { display: block; }
+    .site-footer { padding-bottom: 90px; } 
 }
