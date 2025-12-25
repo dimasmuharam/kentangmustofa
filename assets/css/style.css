@@ -464,3 +464,22 @@ nav a.active, nav a[aria-current="page"] {
     .sticky-wa { display: block; }
     .site-footer { padding-bottom: 90px; } /* Prevent footer covered by sticky button */
 }
+/* --- PENGATURAN KHUSUS LOGO GAMBAR --- */
+
+.site-logo {
+    height: 55px;       /* Ukuran Standar (Laptop/PC) */
+    width: auto;        /* Lebar menyesuaikan biar tidak gepeng */
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Tampilan Mobile (Layar HP) */
+@media (max-width: 768px) {
+    .site-logo {
+        height: 40px;   /* Ukuran Lebih Kecil untuk HP */
+    }
+    
+    .brand-wrapper {
+        flex-grow: 1;   /* Biar logo tidak terhimpit tombol di sebelahnya */
+    }
+}
