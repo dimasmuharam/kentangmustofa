@@ -28,6 +28,7 @@
                     <ul>
                         <li><a href="/" {% if page.url == "/" %}class="active" aria-current="page"{% endif %}>Beranda</a></li>
                         <li><a href="/about" {% if page.url == "/about" %}class="active" aria-current="page"{% endif %}>Tentang Kami</a></li>
+                        <li><a href="/blog/" {% if page.url contains "/blog/" %}class="active" aria-current="page"{% endif %}>Kabar Dapur</a></li>
                     </ul>
                 </nav>
                 <button id="theme-toggle" aria-label="Ganti Mode Gelap">🌙</button>
@@ -40,7 +41,8 @@
     <main id="main-content" class="page-content" aria-label="Content">
         {{ content }}
     </main>
-<footer class="site-footer">
+
+    <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
@@ -72,7 +74,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
     
     <div class="sticky-wa">
