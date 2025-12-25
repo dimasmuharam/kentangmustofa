@@ -1,0 +1,24 @@
+title: "Kentang Mustofa Jakarta - Mulya Cuisine"
+email: feedback@kentangmustofa.biz.id
+description: "Pusat oleh-oleh Kentang Mustofa Jakarta resep asli Mulya Cuisine. Renyah, tanpa pengawet, dan halal. Keuntungan untuk pendidikan inklusif."
+baseurl: ""
+url: "https://kentangmustofa.biz.id"
+
+# Owner Data
+owner:
+  name: "Mulyati Sholeha"
+  whatsapp: "6285882611413"
+  address: "Jl. Haji Nawi No. 39A, Larangan Selatan, Kota Tangerang, Banten 15154"
+  maps_link: "https://goo.gl/maps/YOUR_LINK_HERE" # Nanti diisi link pendek
+
+# Build Settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
