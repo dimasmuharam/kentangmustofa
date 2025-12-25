@@ -1,6 +1,5 @@
 /* ==========================================================================
    MULYA CUISINE - MAIN STYLESHEET
-   Based on Accessible Web Indonesia Architecture
    Features: Dark Mode, WCAG Colors, Responsive Grid, Sticky Actions
    ========================================================================== */
 
@@ -11,9 +10,10 @@
     --brand-dark-red: #8B0000;   /* Merah Marun (Hover/Header) */
     --brand-gold: #FFC107;       /* Kuning Emas (Accent/Highlight) */
     --brand-green: #25D366;      /* WhatsApp Green */
+    --brand-ig: #E1306C;         /* Instagram Pink */
 
     /* --- LIGHT MODE (DEFAULT) --- */
-    --header-bg: #8B0000;        /* Header Merah Marun agar kontras teks putih tetap tinggi */
+    --header-bg: #8B0000;        /* Header Merah Marun */
     --header-text: #ffffff;      
     --primary-color: #D32F2F;    /* Judul Utama Merah */
     --accent-color: #D32F2F;     /* Link & Aksen */
@@ -32,7 +32,7 @@
     /* --- DARK MODE (OPTIMIZED) --- */
     --header-bg: #1a0000;        /* Hitam Kemerahan */
     --header-text: #f4f4f4;      
-    --primary-color: #ff8a80;    /* Merah Muda Terang (agar terbaca di gelap) */
+    --primary-color: #ff8a80;    /* Merah Muda Terang */
     --accent-color: #ffd740;     /* Emas Terang */
     --bg-color: #121212;         
     --text-color: #e6e6e6;       
@@ -40,7 +40,7 @@
     --card-bg: #1e1e1e;          
     --border-color: #444444;     
     --input-bg: #2c2c2c;         
-    --button-text: #000000;      /* Teks hitam di tombol terang */
+    --button-text: #000000;      
     --shadow: 0 4px 6px rgba(0,0,0,0.5);
     --hero-overlay: rgba(0,0,0,0.8);
 }
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--primary-color); margin-top: 0; }
     gap: 15px;
 }
 
-/* Logo Styling (CSS Based) */
+/* Logo Styling */
 .brand-wrapper { display: flex; align-items: center; }
 
 .logo-text {
@@ -220,7 +220,6 @@ nav a.active, nav a[aria-current="page"] {
 /* 5. HERO SECTION */
 .hero-section {
     background-color: var(--brand-dark-red);
-    /* Gunakan gradient overlay agar teks terbaca di atas gambar */
     background-image: linear-gradient(var(--hero-overlay), var(--hero-overlay)), url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -348,7 +347,7 @@ nav a.active, nav a[aria-current="page"] {
 }
 .btn-wa-product:hover {
     background-color: #1ea952;
-    transform: none; /* Reset efek lompat default button */
+    transform: none; 
 }
 
 /* 8. SOCIAL PROOF & CERTIFICATES */
@@ -364,9 +363,9 @@ nav a.active, nav a[aria-current="page"] {
 .cert-display { margin-top: 2rem; }
 .cert-img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow); border: 4px solid white; max-height: 300px; }
 
-/* 9. FOOTER (UPDATED LAYOUT) */
+/* 9. FOOTER */
 .site-footer {
-    background: #0a0a0a; /* Selalu gelap untuk footer */
+    background: #0a0a0a;
     color: #e0e0e0;
     padding: 4rem 0 2rem;
     border-top: 5px solid var(--brand-gold);
@@ -380,6 +379,25 @@ nav a.active, nav a[aria-current="page"] {
 }
 
 .footer-col h3 { color: white; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 15px; }
+
+/* Instagram Button Style */
+.btn-ig {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--brand-ig);
+    background: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.btn-ig:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.2);
+}
 
 .legal-list { list-style: none; padding: 0; }
 .legal-list li { margin-bottom: 10px; display: flex; gap: 10px; }
