@@ -1,20 +1,20 @@
 - name: "Varian Original (Balado)"
   weight: "180gr"
-  price: 35000
+  price: 54000
   image: "assets/img/original.jpg" # Ganti dengan nama file foto asli nanti
   desc: "Rasa klasik balado karamel. Pedas manis gurih, best seller untuk lauk nasi."
   wa_text: "Halo Admin, saya mau pesan Varian Original 180gr."
 
 - name: "Varian Teri Kacang"
-  weight: "200gr"
-  price: 40000
+  weight: "190gr"
+  price: 59000
   image: "assets/img/teri-kacang.jpg"
   desc: "Paket komplit lauk! Perpaduan kentang, teri medan, dan kacang tanah renyah."
   wa_text: "Halo Admin, saya mau pesan Varian Teri Kacang 200gr."
 
 - name: "Varian Anak (Non-Pedas)"
   weight: "180gr"
-  price: 35000
+  price: 50000
   image: "assets/img/kids.jpg"
   desc: "Gurih tanpa cabai. Aman untuk si kecil yang susah makan."
   wa_text: "Halo Admin, saya mau pesan Varian Anak (Tidak Pedas)."
