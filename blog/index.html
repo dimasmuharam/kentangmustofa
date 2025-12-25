@@ -1,0 +1,39 @@
+---
+layout: default
+title: Kabar Dapur & Tips
+permalink: /blog/
+---
+
+<div class="container" style="padding: 4rem 1rem;">
+    <h1 class="section-title">Kabar Dapur & Tips</h1>
+    <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem;">
+        Berbagi cerita tentang dapur Mulya Cuisine, tips menyimpan makanan, hingga inspirasi menu harian.
+    </p>
+
+    <div class="blog-grid" style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        {% for post in paginator.posts %}
+        <article class="card product-card">
+            <div class="product-info">
+                <span style="font-size: 0.85rem; color: var(--text-muted);">{{ post.date | date: "%-d %B %Y" }}</span>
+                <h3><a href="{{ post.url | relative_url }}" style="color: var(--text-color);">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                <a href="{{ post.url | relative_url }}" class="maps-link">Baca Selengkapnya &rarr;</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+    {% if paginator.total_pages > 1 %}
+    <nav aria-label="Navigasi Halaman Blog" style="margin-top: 3rem; text-align: center;">
+        <div class="pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="button" style="background: var(--text-muted);">&laquo; Sebelumnya</a>
+            {% endif %}
+            <span style="margin: 0 15px;">Halaman {{ paginator.page }} dari {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="button" style="background: var(--text-muted);">Selanjutnya &raquo;</a>
+            {% endif %}
+        </div>
+    </nav>
+    {% endif %}
+</div>
