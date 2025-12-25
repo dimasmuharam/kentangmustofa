@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
+
+    <header class="site-header">
+        <div class="container navbar">
+            <div class="brand-wrapper">
+                <a href="/" class="logo-text">
+                    <span class="logo-icon">👨‍🍳</span>
+                    <div class="logo-group">
+                        <span class="brand-main">Mulya Cuisine</span>
+                        <span class="brand-sub">Kentang Mustofa Jakarta</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-controls">
+                <nav aria-label="Menu Utama">
+                    <ul>
+                        <li><a href="/" {% if page.url == "/" %}class="active" aria-current="page"{% endif %}>Beranda</a></li>
+                        <li><a href="/about" {% if page.url == "/about" %}class="active" aria-current="page"{% endif %}>Tentang Kami</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" aria-label="Ganti Mode Gelap">🌙</button>
+                <button id="lang-toggle" aria-label="Ganti Bahasa">ID</button>
+                <div id="google_translate_element" class="visually-hidden"></div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="page-content" aria-label="Content">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Mulya Cuisine</h3>
+                    <p>Dapur produksi rumahan yang memberdayakan ibu-ibu sekitar untuk menghadirkan lauk berkualitas di meja makan Anda.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Legalitas & Keamanan</h3>
+                    <ul class="legal-list">
+                        <li>✅ <strong>Halal:</strong> ID31110018222930524</li>
+                        <li>✅ <strong>P-IRT:</strong> 2113671011073-29</li>
+                        <li>✅ <strong>NIB:</strong> 2404240446459</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Lokasi Produksi</h3>
+                    <address>
+                        {{ site.owner.address }}<br>
+                        <a href="{{ site.owner.maps_link }}" target="_blank" class="maps-link">Lihat di Google Maps →</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ site.time | date: '%Y' }} Mulya Cuisine. Part of <a href="https://www.dimaster.co.id" target="_blank">Dimaster Group Ecosystem</a>.</p>
+                <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/accessibility">Accessibility Statement</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    
+    <div class="sticky-wa">
+        <a href="https://wa.me/{{ site.owner.whatsapp }}?text=Halo%20Mulya%20Cuisine,%20saya%20mau%20tanya%20stok%20kentang%20mustofa..." class="btn-wa-sticky">
+            <span class="wa-icon">💬</span> Chat WhatsApp (Fast Response)
+        </a>
+    </div>
+</body>
+</html>
