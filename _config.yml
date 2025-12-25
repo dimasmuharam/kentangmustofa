@@ -4,12 +4,13 @@ description: "Pusat oleh-oleh Kentang Mustofa Jakarta resep asli Mulya Cuisine. 
 baseurl: ""
 url: "https://kentangmustofa.biz.id"
 
-# Owner Data
+# Owner Data (Update Instagram & Maps disini)
 owner:
   name: "Mulyati Sholeha"
   whatsapp: "6285882611413"
+  instagram: "mulyacuisine.id"
   address: "Jl. Haji Nawi No. 39A, Larangan Selatan, Kota Tangerang, Banten 15154"
-  maps_link: "https://goo.gl/maps/YOUR_LINK_HERE" # Nanti diisi link pendek
+  maps_link: "https://maps.app.goo.gl/tH7XJgq8zP6zJ8d7A" # Link pencarian lokasi
 
 # Build Settings
 markdown: kramdown
@@ -18,7 +19,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Exclude from build
 exclude:
   - Gemfile
   - Gemfile.lock
