@@ -1,0 +1,11 @@
+- name: "Ibu Ratna"
+  role: "Jakarta Selatan"
+  image: "/assets/img/testi/testi1.jpg"
+  text: "Akhirnya nemu kentang mustofa yang bumbunya medok tapi tetep kriuk banget walaupun udah dibuka seminggu. Anak-anak suka banget buat bekal sekolah!"
+  alt: "Screenshot percakapan WhatsApp dengan Ibu Ratna yang memuji kerenyahan kentang."
+
+- name: "Mas Budi"
+  role: "Depok"
+  image: "/assets/img/testi/testi2.jpg"
+  text: "Paketnya sudah sampai gan. Cepet banget pengirimannya. Teri kacangnya gurih, pas buat temen nasi anget."
+  alt: "Screenshot chat Mas Budi mengonfirmasi paket sudah sampai dan rasanya gurih."
