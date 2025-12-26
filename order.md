@@ -73,7 +73,48 @@ permalink: /pesan/
             <button type="button" onclick="kirimWhatsApp()" class="button btn-large" style="width: 100%; background: var(--brand-green); border: none;">
                 <span style="margin-right: 8px;">📱</span> Pesan via WhatsApp
             </button>
+<div style="margin-top: 3rem; border-top: 2px dashed var(--border-color); padding-top: 2rem; text-align: center;">
+                
+                <h4 style="color: var(--brand-red); margin-bottom: 10px;">Metode Pembayaran</h4>
+                
+                <p style="font-size: 0.95rem; margin-bottom: 1rem; color: inherit;">
+                    Kami menerima pembayaran via <strong>QRIS</strong> (Semua E-Wallet & Mobile Banking).
+                </p>
 
+                <div style="
+                    background: #ffffff; 
+                    padding: 15px; 
+                    display: inline-block; 
+                    border-radius: 12px; 
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                ">
+                    <img src="/assets/img/qris.png" 
+                         alt="Scan QRIS Mulya Cuisine" 
+                         style="width: 100%; max-width: 250px; height: auto; display: block;">
+                    
+                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; font-weight: bold; color: #333;">
+                        NMID: ID1025467261109
+                    </p>
+                </div>
+
+                <div style="
+                    background-color: #fff3cd; 
+                    color: #856404; 
+                    padding: 1rem; 
+                    border-radius: 8px; 
+                    margin-top: 1.5rem; 
+                    font-size: 0.9rem; 
+                    border-left: 5px solid #ffeeba;
+                    text-align: left;
+                    max-width: 500px;
+                    margin-left: auto;
+                    margin-right: auto;
+                ">
+                    <strong>⚠️ PENTING:</strong><br>
+                    Mohon <u>JANGAN transfer dulu</u> sebelum Admin membalas WhatsApp Anda untuk mengonfirmasi total harga + ongkir final.
+                </div>
+
+            </div>
         </form>
     </div>
 
