@@ -67,18 +67,30 @@ permalink: /links/
         text-decoration: none;
     }
 
-    /* Warna-warna Tombol */
+    /* Ikon Emoji di kiri tombol */
+    .btn-icon {
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+
+    /* Variasi Warna Tombol */
     .btn-main {
         background-color: var(--brand-red);
         color: white !important;
         border: 2px solid var(--brand-red);
     }
-    
     .btn-wa {
         background-color: #25D366;
         color: white !important;
     }
-
+    .btn-tokped {
+        background-color: #42b549;
+        color: white !important;
+    }
+    .btn-shopee {
+        background-color: #ee4d2d;
+        color: white !important;
+    }
     .btn-outline {
         background-color: white;
         color: var(--text-color) !important;
@@ -87,12 +99,6 @@ permalink: /links/
     .btn-outline:hover {
         border-color: var(--brand-gold);
         color: var(--brand-red) !important;
-    }
-
-    /* Ikon Emoji di kiri tombol */
-    .btn-icon {
-        margin-right: 10px;
-        font-size: 1.2rem;
     }
 
     /* Footer kecil di bawah */
@@ -120,12 +126,20 @@ permalink: /links/
             <span class="btn-icon">💬</span> Chat WhatsApp Admin
         </a>
 
-        <a href="/" class="bio-btn btn-outline">
-            <span class="btn-icon">🌐</span> Kunjungi Website Resmi
+        <a href="https://www.tokopedia.com/mulya-cuisine/kentang-mustofa-jakarta-home-made-by-mulya-cuisine-1733406073631966208" target="_blank" class="bio-btn btn-tokped">
+            <span class="btn-icon">🛍️</span> Beli di Tokopedia
         </a>
 
-        <a href="{{ site.owner.maps_link }}" target="_blank" class="bio-btn btn-outline">
-            <span class="btn-icon">📍</span> Lokasi Dapur Kami
+        <a href="#" target="_blank" class="bio-btn btn-shopee">
+            <span class="btn-icon">🧡</span> Beli di Shopee
+        </a>
+
+        <a href="/" class="bio-btn btn-outline">
+            <span class="btn-icon">🌐</span> Kunjungi Website
+        </a>
+
+        <a href="https://share.google/Wl3y4XTvu1uetcQsJ" target="_blank" class="bio-btn btn-outline">
+            <span class="btn-icon">📍</span> Lokasi Dapur
         </a>
 
         <a href="/about/" class="bio-btn btn-outline">
@@ -138,4 +152,4 @@ permalink: /links/
         <p>&copy; 2025 Mulya Cuisine<br>Part of Dimaster Group Ecosystem</p>
     </div>
 
-</div>  
+</div>
