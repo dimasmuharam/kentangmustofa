@@ -8,10 +8,23 @@ permalink: /about/
     <div style="max-width: 800px; margin: 0 auto;">
 
         <h1 style="text-align: center; margin-bottom: 1rem;">Di Balik Dapur Mulya Cuisine</h1>
-
-        <p style="font-size: 1.2rem; text-align: center; color: #666; font-style: italic; margin-bottom: 3rem;">
-            "Bukan sekadar bisnis kuliner, tapi sebuah gerakan untuk memberdayakan ibu rumah tangga dan mendukung pendidikan inklusif."
-        </p>
+<div style="
+    border-left: 6px solid var(--brand-red); 
+    padding: 1rem 1.5rem; 
+    margin: 2.5rem 0;
+">
+    <p style="
+        font-size: 1.4rem; 
+        font-weight: bold; 
+        line-height: 1.5; 
+        margin: 0; 
+        font-style: italic;
+        color: inherit;
+    ">
+        "Bukan sekadar bisnis kuliner, tapi sebuah gerakan untuk memberdayakan ibu rumah tangga dan mendukung pendidikan inklusif."
+    </p>
+</div>
+        
 
         <hr style="margin: 2rem 0; border: 0; border-top: 1px solid #ddd;">
 
