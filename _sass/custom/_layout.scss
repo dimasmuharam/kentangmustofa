@@ -105,6 +105,11 @@ nav {
         color: var(--header-text);
         font-weight: 500;
         font-size: 1rem;
+        display: inline-block;
+        padding: 10px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
         
         // Active State - Accessibility compliant
         &:hover, 
@@ -115,6 +120,8 @@ nav {
             text-decoration: underline;
             text-decoration-thickness: 3px;
             text-underline-offset: 4px;
+            outline: 2px solid var(--brand-gold);
+            outline-offset: 2px;
         }
     }
 }

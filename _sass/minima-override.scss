@@ -1,0 +1,17 @@
+// ==========================================================================
+// MINIMA THEME OVERRIDE
+// This file overrides the minima gem theme to prevent SASS deprecation warnings
+// ==========================================================================
+
+// Instead of importing minima theme SCSS which uses deprecated @import,
+// we'll rely on our custom styles only and not load minima's SCSS at all.
+// The HTML layout still uses minima's structure but with our custom CSS.
+
+// If you need specific minima features, copy them here and modernize them
+// using @use instead of @import and modern color functions.
+
+// Example: If minima uses lighten($color, 10%), replace with:
+// @use "sass:color";
+// color.adjust($color, $lightness: 10%)
+
+// For now, all styling is handled by our custom modules in _sass/custom/
