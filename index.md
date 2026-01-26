@@ -66,7 +66,8 @@ title: Home
                 name: {{ item.name | jsonify }},
                 role: {{ item.role | jsonify }},
                 image: {{ item.image | jsonify }},
-                text: {{ item.text | jsonify }}
+                text: {{ item.text | jsonify }},
+                alt: {{ item.alt | jsonify }}
             },
             {% endfor %}
         ];
@@ -98,7 +99,7 @@ title: Home
             <figure class="testi-card" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem; height: 100%; display: flex; flex-direction: column; text-align: left;">
                 
                 <div style="margin-bottom: 1rem; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">
-                    <img src="${item.image}" alt="" aria-hidden="true" style="width: 100%; height: auto; display: block;">
+                    <img src="${item.image}" alt="${item.alt || 'Screenshot testimoni pelanggan ' + item.name}" style="width: 100%; height: auto; display: block;">
                 </div>
 
                 <figcaption style="flex-grow: 1; display: flex; flex-direction: column;">

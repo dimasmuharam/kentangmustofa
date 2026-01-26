@@ -1,0 +1,65 @@
+// ==========================================================================
+// BASE STYLES - Global resets and typography
+// No deprecated SASS functions
+// ==========================================================================
+
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+// Link Default
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    
+    &:hover { 
+        text-decoration: underline; 
+    }
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    color: var(--primary-color); 
+    margin-top: 0; 
+}
+
+// Skip Link (Accessibility - WCAG 2.1 AAA)
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: var(--brand-gold);
+    color: #000;
+    padding: 10px 15px;
+    z-index: 10000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: top 0.3s;
+    
+    &:focus { 
+        top: 0; 
+    }
+}
+
+// Visually hidden utility class (for screen readers)
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
