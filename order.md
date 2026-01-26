@@ -70,7 +70,7 @@ permalink: /pesan/
                 <p id="ongkir-note" style="font-size: 0.85rem; color: #888; text-align: right; font-style: italic; margin-top: 5px;"></p>
             </div>
 
-            <button type="button" onclick="kirimWhatsApp()" class="button btn-large" style="width: 100%; background: var(--brand-green); border: none;">
+            <button type="button" onclick="kirimWhatsApp()" class="button btn-large" style="width: 100%; background: #25D366; border: none; color: white; font-weight: bold;">
                 <span style="margin-right: 8px;">📱</span> Pesan via WhatsApp
             </button>
 <div style="margin-top: 3rem; border-top: 2px dashed var(--border-color); padding-top: 2rem; text-align: center;">

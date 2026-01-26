@@ -1,0 +1,16 @@
+---
+# Front matter to trigger Jekyll SCSS processing
+---
+
+// ==========================================================================
+// MULYA CUISINE - MAIN STYLESHEET (MODERN SASS)
+// Using @use instead of deprecated @import
+// No deprecated color functions (lighten/darken)
+// WCAG 2.1 AAA Compliant
+// ==========================================================================
+
+// Import custom modules using modern @use syntax
+@use "custom/variables";
+@use "custom/base";
+@use "custom/layout";
+@use "custom/components";
