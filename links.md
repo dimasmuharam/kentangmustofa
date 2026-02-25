@@ -130,7 +130,7 @@ permalink: /links/
             <span class="btn-icon">🛍️</span> Beli di Tokopedia
         </a>
 
-        <a href="#" target="_blank" class="bio-btn btn-shopee">
+        <a href="https://shopee.co.id/mulya_cuisine/6766676224" target="_blank" class="bio-btn btn-shopee">
             <span class="btn-icon">🧡</span> Beli di Shopee
         </a>
 
@@ -149,7 +149,7 @@ permalink: /links/
     </div>
 
     <div class="bio-footer">
-        <p>&copy; 2025 Mulya Cuisine<br>Part of Dimaster Group Ecosystem</p>
+        <p>&copy; 2026 Mulya Cuisine<br>Part of Dimaster Group Ecosystem</p>
     </div>
 
 </div>
