@@ -138,7 +138,7 @@ permalink: /links/
             <span class="btn-icon">🌐</span> Kunjungi Website
         </a>
 
-        <a href="https://share.google/Wl3y4XTvu1uetcQsJ" target="_blank" class="bio-btn btn-outline">
+        <a href="https://maps.app.goo.gl/TvzfTcZ5RBQPWJjH8" target="_blank" class="bio-btn btn-outline">
             <span class="btn-icon">📍</span> Lokasi Dapur
         </a>
 
