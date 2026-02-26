@@ -126,7 +126,7 @@ permalink: /links/
             <span class="btn-icon">💬</span> Chat WhatsApp Admin
         </a>
 
-        <a href="https://www.tokopedia.com/mulya-cuisine/kentang-mustofa-jakarta-home-made-by-mulya-cuisine-1733406073631966208" target="_blank" class="bio-btn btn-tokped">
+        <a href="#" target="_blank" class="bio-btn btn-tokped">
             <span class="btn-icon">🛍️</span> Beli di Tokopedia
         </a>
 
